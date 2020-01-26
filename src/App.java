@@ -15,12 +15,18 @@ public class App {
 
     Bus bus1 = new Bus(1, 200);
     Bus bus2 = new Bus(2, 200);
+    Bus bus3 = new Bus(3, 300);
+    Bus bus4 = new Bus(4, 200);
+    Bus bus5 = new Bus(5, 200);
 
     Ride ride1 = new Ride(bus1, "16:00", "20:00", 1);
     Ride ride2 = new Ride(bus2, "12:00", "18:00", 2000);
+    Ride ride3 = new Ride(bus3, "12:00", "18:00", 1999);
+
 
     Parking parking1 = new Parking(ride1, station1);
     Parking parking2 = new Parking(ride2, station2);
+    Parking parking3 = new Parking(ride3, station3);
 
 
 
