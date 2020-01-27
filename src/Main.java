@@ -1,11 +1,11 @@
-public class Main {
-    public static void main(String[] args)
-    {
-        Object[10] gates;
-        //4 national gates
-        gates[0] = new Gate();
-        //2 small international gates
+import java.io.IOException;
 
-        //4 big international gates
+public class Main {
+    public static void main(String[] args) throws IOException
+    {
+//        BusStation station = new BusStation("Oberglatt", '1', false, false);
+//        System.out.println(station.getName());
+        App app = new App();
+        app.run();
     }
 }

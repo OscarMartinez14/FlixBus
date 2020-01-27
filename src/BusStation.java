@@ -1,37 +1,55 @@
 public class BusStation {
-    private String name;
-    private Gate[] gates;
+    public String name;
+    public int number;
+    public boolean buisness;
+    public boolean occupied;
 
-    public void setGates(Gate[] gates) {
-        this.gates = gates;
-    }
-
-    public void setName(String name) {
+    public BusStation(String name, int number, boolean buisness, boolean occupied)
+    {
         this.name = name;
+        this.number = number;
+        this.buisness = buisness;
+        this.occupied = occupied;
     }
 
-    public Object[] getGates() {
-        return gates;
-    }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public BusStation(String name, Gate[] gates) {
+    public void setName(String name)
+    {
         this.name = name;
-        this.gates = gates;
     }
 
-    public void arrive(Ride ride){
-
+    public int getNumber()
+    {
+        return number;
     }
 
-    public void start(int gateNumber){
-
+    public void setNumber(int number)
+    {
+        this.number = number;
     }
 
-    public void gateStatus(int gateNumber){
+    public boolean isBuisness()
+    {
+        return buisness;
+    }
 
+    public void setBuisness(boolean buisness)
+    {
+        this.buisness = buisness;
+    }
+
+    public boolean isOccupied()
+    {
+        return occupied;
+    }
+
+    public void setOccupied(boolean occupied)
+    {
+        this.occupied = occupied;
     }
 }
