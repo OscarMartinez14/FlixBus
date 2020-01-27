@@ -19,14 +19,18 @@ public class App {
     Bus bus4 = new Bus(4, 200);
     Bus bus5 = new Bus(5, 200);
 
-    Ride ride1 = new Ride(bus1, "16:00", "20:00", 1);
-    Ride ride2 = new Ride(bus2, "12:00", "18:00", 2000);
-    Ride ride3 = new Ride(bus3, "12:00", "18:00", 1999);
+    Ride ride1 = new Ride(bus1, "16:00", "20:00", 1, "Genf");
+    Ride ride2 = new Ride(bus2, "12:00", "08:00", 2000, "Zagreb");
+    Ride ride3 = new Ride(bus3, "12:00", "18:00", 1999, "Bern");
+    Ride ride4 = new Ride(bus4, "08:00", "15:00", 22, "Aargau");
+    Ride ride5 = new Ride(bus5, "21:00", "02:00", 45, "Zürich");
 
 
     Parking parking1 = new Parking(ride1, station1);
     Parking parking2 = new Parking(ride2, station2);
     Parking parking3 = new Parking(ride3, station3);
+    Parking parking4 = new Parking(ride4, station1);
+    Parking parking5 = new Parking(ride5, station1);
 
 
 
@@ -59,6 +63,8 @@ public class App {
                     selection = scanner.next();
                     switch (selection){
                         case "1":
+                            System.out.println("Start: " + ride4.getStart() + " Back: " + ride4.getBack() + " Location: " + ride4.getLocation() + " "
+                                    + ride4.getInternational());
                             break;
                         case "2":
                             break;
