@@ -40,7 +40,7 @@ public class Ride {
     }
     public String getInternational()
     {
-        if (number <= 1000) {
+        if (number >= 1000) {
             return "International";
         } else {
             return "National";

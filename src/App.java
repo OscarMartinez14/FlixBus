@@ -63,8 +63,8 @@ public class App {
                     selection = scanner.next();
                     switch (selection){
                         case "1":
-                            System.out.println("Start: " + ride4.getStart() + " Back: " + ride4.getBack() + " Location: " + ride4.getLocation() + " "
-                                    + ride4.getInternational());
+                            System.out.println(ride4.getInternational() + " Start: " + ride4.getStart() + " Back: " + ride4.getBack() + " Location: " + ride4.getLocation());
+                            System.out.println(ride4.getInternational() + " Start: " + ride4.getStart() + " Back: " + ride4.getBack() + " Location: " + ride4.getLocation());
                             break;
                         case "2":
                             break;
