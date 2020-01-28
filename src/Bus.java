@@ -1,6 +1,6 @@
-public class Bus {
-    public int number;
-    public int passengerSeats;
+public class Bus extends Car {
+    private int number;
+    private int passengerSeats;
 
     public Bus(int number, int passengerSeats)
     {
@@ -11,6 +11,12 @@ public class Bus {
     public int getNumber()
     {
         return number;
+    }
+
+    public String isTuned() {
+        if (passengerSeats >= 200) {
+            return "This Bus is tuned";
+        } else return "This Bus is not tuned";
     }
 
     public void setNumber(int number)
