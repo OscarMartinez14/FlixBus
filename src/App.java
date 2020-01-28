@@ -43,6 +43,8 @@ public class App {
     Parking parking9 = new Parking(ride9, station3);
     Parking parking10 = new Parking(ride10, station4);
     Parking parking11 = new Parking(ride11, station4);
+    Parking parking12 = new Parking(ride12, station5);
+    Parking parking13 = new Parking(ride13, station5);
 
 
 
@@ -57,6 +59,19 @@ public class App {
 
             switch (selection) {
                 case "1":
+                    System.out.println("Start: " + parking1.getRide().getStart() +" Location: "+ parking1.getRide().getLocation() + " Parking: " + parking1.getBusStation().getName());
+                    System.out.println("Start: " + parking2.getRide().getStart() +" Location: "+ parking2.getRide().getLocation() + " Parking: " + parking2.getBusStation().getName());
+                    System.out.println("Start: " + parking3.getRide().getStart() +" Location: "+ parking3.getRide().getLocation() + " Parking: " + parking3.getBusStation().getName());
+                    System.out.println("Start: " + parking4.getRide().getStart() +" Location: "+ parking4.getRide().getLocation() + " Parking: " + parking4.getBusStation().getName());
+                    System.out.println("Start: " + parking5.getRide().getStart() +" Location: "+ parking5.getRide().getLocation() + " Parking: " + parking5.getBusStation().getName());
+                    System.out.println("Start: " + parking6.getRide().getStart() +" Location: "+ parking6.getRide().getLocation() + " Parking: " + parking6.getBusStation().getName());
+                    System.out.println("Start: " + parking7.getRide().getStart() +" Location: "+ parking7.getRide().getLocation() + " Parking: " + parking7.getBusStation().getName());
+                    System.out.println("Start: " + parking8.getRide().getStart() +" Location: "+ parking8.getRide().getLocation() + " Parking: " + parking8.getBusStation().getName());
+                    System.out.println("Start: " + parking9.getRide().getStart() +" Location: "+ parking9.getRide().getLocation() + " Parking: " + parking9.getBusStation().getName());
+                    System.out.println("Start: " + parking10.getRide().getStart() +" Location: "+ parking10.getRide().getLocation() + " Parking: " + parking10.getBusStation().getName());
+                    System.out.println("Start: " + parking11.getRide().getStart() +" Location: "+ parking11.getRide().getLocation() + " Parking: " + parking11.getBusStation().getName());
+                    System.out.println("Start: " + parking12.getRide().getStart() +" Location: "+ parking12.getRide().getLocation() + " Parking: " + parking12.getBusStation().getName());
+                    System.out.println("Start: " + parking13.getRide().getStart() +" Location: "+ parking13.getRide().getLocation() + " Parking: " + parking13.getBusStation().getName());
                     break;
                 case "2":
                     System.out.println(
